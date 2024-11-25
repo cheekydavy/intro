@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff79b0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome My Love</h1>
+    <p>This heartfelt message is dedicated to you, Jacy. You are the melody in my symphony, the sunshine in my day, and the dream I cherish every moment. My love for you knows no bounds.</p>
+    
+    <p>Do you love me?</p>
+    <div class="buttons">
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+
+    <script>
+        document.getElementById('yesButton').onclick = function() {
+            window.location.href = 'pair.html';
+        };
+        document.getElementById('noButton').onclick = function() {
+            // Do nothing
+            alert("That's okay! Let's cherish our moments together.");
+        };
+    </script>
+</body>
+</html>
